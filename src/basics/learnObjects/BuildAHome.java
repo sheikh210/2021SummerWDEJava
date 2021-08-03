@@ -12,10 +12,12 @@ public class BuildAHome {
         house1.color = "White";
         house2.color = "Blue";
         house3.color = "Purple";
+        house4.color = "Red";
 
         System.out.println(house1.color);
         System.out.println(house2.color);
-//        System.out.println(house3.color);
+        System.out.println(house3.color);
+        System.out.println(house4.color);
 
 
 
