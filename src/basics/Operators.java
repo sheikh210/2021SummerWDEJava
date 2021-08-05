@@ -7,16 +7,31 @@ public class Operators {
         1 - Arithmetic
         2 - Assignment
         3 - Comparison
+        4 - Logical
      */
 
     public static void main(String[] args) {
-        int x = 5;
+//        int x = 5;
+//
+//        x += 1;
+//        System.out.println(x);
+//
+//        x -= 1;
+//        System.out.println(x);
+//
+//        int a = 10;
+//        int b = 10;
+//
+//        System.out.println(a == b);
+//        System.out.println(a != b);
+//
+        String msg1 = "Hello, World";
+        String msg2 = "Hello, world";
 
-        x += 1;
-        System.out.println(x);
+        boolean isDifferent = !(msg1.equals(msg2));
 
-        x -= 1;
-        System.out.println(x);
+        System.out.println(isDifferent);
+
     }
 
     public int addition() {

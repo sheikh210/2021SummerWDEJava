@@ -9,17 +9,17 @@ public class Casting {
      */
 
     public static void main(String[] args) {
-//        // Narrowing
-//        long y = 50845643526654L;
+        // Narrowing
+//        long y = 5084564L;
 //        int x = (int) y;
-//
-//        // Widening
+
+        // Widening
 //        int a = 5000;
 //        long b = a;
-//
+
 //        System.out.println(y);
 //        System.out.println(x);
-//
+
 //        System.out.println(a);
 //        System.out.println(b);
 
@@ -27,8 +27,8 @@ public class Casting {
         String x = "10";
         String y = "15";
 
-        short a = Short.valueOf(x);
-        short b = Short.valueOf(y);
+        int a = Integer.valueOf(x);
+        int b = Integer.valueOf(y);
 
         System.out.println(a + b);
 

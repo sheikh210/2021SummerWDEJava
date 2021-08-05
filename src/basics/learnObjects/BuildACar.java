@@ -7,12 +7,17 @@ public class BuildACar {
         Tesla model3 = new Tesla();
         Tesla modelY = new Tesla();
 
-        modelS.model = "Model S";
-        model3.model = "Model 3";
-        modelY.model = "Model Y";
+        int x = 5;
 
-        System.out.println("This car is a " + modelS.MANUFACTURER + " " + modelS.model);
-        System.out.println("This car is a " + model3.MANUFACTURER + " " + model3.model);
-        System.out.println("This car is a " + modelY.MANUFACTURER + " " + modelY.model);
+//        System.out.println(modelS);
+//        System.out.println(new Tesla());
+
+//        modelS.model = "Model S";
+//        model3.model = "Model 3";
+//        modelY.model = "Model Y";
+//
+//        System.out.println("This car is a " + modelS.MANUFACTURER + " " + modelS.model);
+//        System.out.println("This car is a " + model3.MANUFACTURER + " " + model3.model);
+//        System.out.println("This car is a " + modelY.MANUFACTURER + " " + modelY.model);
     }
 }
