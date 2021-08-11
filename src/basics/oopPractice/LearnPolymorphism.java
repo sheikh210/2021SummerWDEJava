@@ -20,4 +20,12 @@ public class LearnPolymorphism {
         return x + y;
     }
 
+    public static double addition(double x, double y) {
+        return x + y;
+    }
+
+    public static int addition(int x, int y, int z) {
+        return x + y + z;
+    }
+
 }

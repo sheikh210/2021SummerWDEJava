@@ -4,18 +4,31 @@ import java.util.Scanner;
 
 public class ScannerPractice {
 
+    /*
+     Group Exercise:
+        Write a program (method) to accept user input, prompting user for their first name and then their last name,
+        and then return their full name
+     */
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        String fullName = getFullName();
+        System.out.println(fullName);
+    }
 
-        System.out.println("PLEASE ENTER 1st NUMBER:");
-        int x = sc.nextInt();
+    public static String getFullName(){
+        String fullName = "";
 
-        System.out.println("PLEASE ENTER 2nd NUMBER:");
-        int y = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-        int z = x + y;
+        System.out.println("Please enter your first name:");
+        String firstName = scanner.nextLine();
 
-        System.out.println("YOUR SUM IS: " + z);
+        System.out.println("Please enter your last name:");
+        String lastName = scanner.nextLine();
+
+        fullName = firstName + " " + lastName;
+
+        return fullName;
     }
 
 }

@@ -11,29 +11,39 @@ public class Operators {
      */
 
     public static void main(String[] args) {
-//        int x = 5;
-//
-//        x += 1;
-//        System.out.println(x);
-//
-//        x -= 1;
-//        System.out.println(x);
-//
-//        int a = 10;
-//        int b = 10;
-//
-//        System.out.println(a == b);
-//        System.out.println(a != b);
-//
-        String msg1 = "Hello, World";
-        String msg2 = "Hello, world";
+        // Assignment (=, +=, -=)
+        int x = 5;
 
-        boolean isDifferent = !(msg1.equals(msg2));
+        x += 1;
+//        System.out.println(x);
 
-        System.out.println(isDifferent);
+        x -= 1;
+//        System.out.println(x);
+
+        // Comparison Operators (==, !=, >, <, >=, <=)
+        int a = 200;
+        int b = 55;
+
+//        System.out.println(a == b); // False
+//        System.out.println(a != b); // True
+//        System.out.println(a > b); // True
+//        System.out.println(a < b); // False
+//        System.out.println(a >= b); // True
+//        System.out.println(a <= b); // False
+
+        // Logical Operators (&&, ||)
+        int c = 50;
+        int d = 199;
+
+        boolean result1 = (a >= d) && (c >= b);
+        boolean result2 = (a >= d) || (c >= b);
+
+        System.out.println(result1);
+        System.out.println(result2);
 
     }
 
+    // Arithmetic Operators (+, -, /, *, %)
     public int addition() {
         int x = 10;
         int y = 5;

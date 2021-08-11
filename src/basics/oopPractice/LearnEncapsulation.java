@@ -4,9 +4,9 @@ public class LearnEncapsulation {
 
     // Encapsulation = Data Hiding
 
-    private double account_balance = 50.00;
+    private double accountBalance = 50.00;
 
     public double getAccountBalance() {
-        return account_balance;
+        return accountBalance;
     }
 }
