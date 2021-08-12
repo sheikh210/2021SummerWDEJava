@@ -1,4 +1,4 @@
-package basics;
+package basics.controlFlow;
 
 public class ForLoops {
 
@@ -8,7 +8,7 @@ public class ForLoops {
 
     public static void main(String[] args) {
             // Start       While true, run this loop          Step
-        for (int i = 1;             i < 5;                    i++) {
+        for (int i = 1;             i < 0;                    i++) {
             System.out.println("The value of i is " + i);
         }
     }

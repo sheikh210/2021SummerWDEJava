@@ -1,4 +1,4 @@
-package basics.oopPractice;
+package basics.oopPractice.encapsulation;
 
 public class LearnEncapsulation {
 
@@ -9,4 +9,5 @@ public class LearnEncapsulation {
     public double getAccountBalance() {
         return accountBalance;
     }
+
 }

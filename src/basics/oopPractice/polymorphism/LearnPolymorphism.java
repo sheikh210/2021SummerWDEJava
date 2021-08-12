@@ -1,4 +1,4 @@
-package basics.oopPractice;
+package basics.oopPractice.polymorphism;
 
 public class LearnPolymorphism {
 

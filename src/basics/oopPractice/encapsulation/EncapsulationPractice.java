@@ -1,4 +1,6 @@
-package basics.oopPractice;
+package basics.oopPractice.encapsulation;
+
+import basics.oopPractice.encapsulation.LearnEncapsulation;
 
 public class EncapsulationPractice {
 

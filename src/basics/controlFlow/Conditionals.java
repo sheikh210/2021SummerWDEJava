@@ -6,6 +6,12 @@ public class Conditionals {
      Control Flow - Code that can control the flow of a program, based on certain conditions
         Conditionals - Check whether an expression is true or false before executing or not executing certain
                        blocks of code
+                   1. If, Else-If, Else
+                   2. Switch Case
+        Loops
+            1 - For Loop
+            2 - For-Each Loop
+
      */
 
     public static void main(String[] args) {
@@ -66,6 +72,11 @@ public class Conditionals {
     }
 
 
+
+
+
+
+
     public static void ifConditional() {
         int a = 500;
         int b = 499;
@@ -74,13 +85,20 @@ public class Conditionals {
 
         if (a > c) {
             System.out.println("A is greater than C");
-        } else if (b > d) {
+        }
+
+        else if (b > d) {
             System.out.println("B is greater than D");
-        } else if (a < d) {
+        }
+
+        else if (b < c){
             System.out.println("A is less than D");
-        } else {
+        }
+
+        else {
             System.out.println("None of the conditions were met");
         }
+
 
         /*
          We start the conditional using: if (condition) { }

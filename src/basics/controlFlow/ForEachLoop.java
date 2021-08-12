@@ -1,4 +1,4 @@
-package basics;
+package basics.controlFlow;
 
 public class ForEachLoop {
 
