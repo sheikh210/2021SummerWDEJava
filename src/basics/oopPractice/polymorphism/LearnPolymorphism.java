@@ -4,11 +4,16 @@ public class LearnPolymorphism {
 
     /*
     2 Different Types of Polymorphism
-        1 - Compile-Time Polymorphism (Method Overloading)
+        1 - Compile-Time Polymorphism | Static Polymorphism (Method Overloading)
+            - Name of the method
             - Number of parameters
             - Data types of parameters
             - Order of parameters
-        2 - *********************************************
+        2 - Run-Time Polymorphism | Dynamic Polymorphism (Method Overriding)
+            - Name of the method
+            - Number of parameters
+            - Data types of parameters
+            - Order of parameters
      */
 
     public static void main(String[] args) {

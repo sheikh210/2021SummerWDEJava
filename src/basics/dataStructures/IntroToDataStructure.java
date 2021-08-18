@@ -1,4 +1,4 @@
-package basics;
+package basics.dataStructures;
 
 public class IntroToDataStructure {
 

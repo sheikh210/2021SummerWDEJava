@@ -7,7 +7,14 @@ public class Motorcycle extends Vehicle {
     boolean hasSeatCompartment;
     boolean hasKickstand;
 
+    public Motorcycle(String color, String mfr, String model, int numOfWheels, int cc, String typeOfMotorcycle, boolean hasSeatCompartment, boolean hasKickstand) {
+        super(color, mfr, model, numOfWheels);
 
+        this.cc = cc;
+        this.typeOfMotorcycle = typeOfMotorcycle;
+        this.hasSeatCompartment = hasSeatCompartment;
+        this.hasKickstand = hasKickstand;
+    }
 
     public void putInKickstand() {
         System.out.println("Bicycle is off of kickstand");

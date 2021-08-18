@@ -15,6 +15,4 @@ public class StringPractice {
         System.out.println(phrase.indexOf('F'));
         System.out.println(phrase.equals(phrase2));
     }
-
-
 }

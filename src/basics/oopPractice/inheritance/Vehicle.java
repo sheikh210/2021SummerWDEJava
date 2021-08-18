@@ -13,20 +13,27 @@ public class Vehicle {
     String model;
     int numOfWheels;
 
-    public static void start() {
+    public Vehicle(String color, String mfr, String model, int numOfWheels) {
+        this.color = color;
+        this.mfr = mfr;
+        this.model = model;
+        this.numOfWheels = numOfWheels;
+    }
+
+    public void start() {
         System.out.println("Starting vehicle");
     }
 
-    public static void turnOff() {
+    public void turnOff() {
         System.out.println("Turning off vehicle");
     }
 
-    public static void accelerate() {
+    public void accelerate() {
         System.out.println("Accelerating");
     }
 
-    public static void decelerate() {
-        System.out.println("Decelerate");
+    public void decelerate() {
+        System.out.println("Decelerating");
     }
 
 }
