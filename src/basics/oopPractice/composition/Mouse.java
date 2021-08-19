@@ -15,8 +15,12 @@ public class Mouse {
     }
 
     void moveMouse(int pixels) {
+        System.out.println("Moving mouse " + pixels + " pixels");
+
         for (int i = 0; i <= pixels; i++) {
-            System.out.println("Moving mouse - currently at pixel " + pixels);
+            System.out.println("Moving mouse - currently at pixel " + i);
         }
+
+        System.out.println("Mouse moved " + pixels + " pixels");
     }
 }
