@@ -1,35 +1,67 @@
 package basics;
 
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Trying {
 
     static {
-        scan = new Scanner(System.in);
+        retryCount = 0;
     }
 
-    static Scanner scan;
+    static String sampleEndpoint = "http://testendpoint.com/";
+    static int retryCount;
 
     public static void main(String[] args) {
+        System.out.println(getVaultMetaData("sampleVaultId/"));
+    }
 
-        int input = 0;
-        System.out.print("Enter a number | To exit, enter '-1' > ");
 
-        while (true) {
-            String garbageOutput = null;
+    public static Map<String, String> getVaultMetaData(String vaultID) {
+        Map<String, String> responseDataMap = null;
+        int responseStatusCode;
 
-            if (scan.hasNextInt() && ((input = scan.nextInt()) != -1)) {
-                System.out.println("\nYou entered: " + input);
-                System.out.print("Enter a number | To exit, enter '-1' > ");
+        if (!vaultID.isBlank()) {
+            String requestURL = sampleEndpoint + vaultID;
+            responseStatusCode = getStatusCode(requestURL);
 
-            } else if (scan.hasNextInt() && (scan.nextInt() == -1)) {
-                System.out.println("Goodbye");
-                break;
+            if (responseStatusCode == 200) {
 
-            } else if (!scan.hasNextInt() && (scan.hasNextLine()) && (!(garbageOutput = scan.nextLine()).isEmpty())) {
-                System.out.printf("You've entered garbage - [%s]%n", garbageOutput);
+                if (!getJsonResponseErrorCode().contains("errorCode\" : \"UWC -")) {
+                    try {
+                        responseDataMap = new HashMap<>();
+                        responseDataMap = getJsonResponseResponseData();
+                    } catch (Exception e) {
+                        System.out.println("Could not retrieve responseData");
+                        return responseDataMap;
+                    }
+
+                    return responseDataMap;
+                } else if ((getJsonResponseErrorCode().contains("errorCode\" : \"UWC -")) && retryCount < 5) {
+                    retryCount++;
+                    return getVaultMetaData(vaultID);
+                }
             }
         }
-
+        return responseDataMap;
     }
+
+
+    private static int getStatusCode(String requestURL) {
+        return 200;
+    }
+
+    private static String getJsonResponseErrorCode() {
+        return "errorCode\" : \"UWC -555";
+    }
+
+    private static HashMap<String, String> getJsonResponseResponseData() {
+        HashMap<String, String> responseData = new HashMap<>();
+        responseData.put("key1", "value1");
+        responseData.put("key2", "value2");
+        responseData.put("key3", "value3");
+
+        return responseData;
+    }
+
 }
