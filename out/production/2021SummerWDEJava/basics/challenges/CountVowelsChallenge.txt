@@ -1,0 +1,7 @@
+*** COUNT VOWELS CHALLENGE ***
+
+Write a program, called countVowels()
+The method should accept 1 parameter of type String
+It should return the number of vowels in the String parameter
+
+TIME TO COMPLETE:

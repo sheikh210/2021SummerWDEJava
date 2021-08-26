@@ -1,0 +1,12 @@
+***COMPOSITION CHALLENGE***
+Create a single room of a house using composition
+Think about the things that should be included in the room - This could be physical parts of the room, but furniture too
+
+Your room must have at least 4 objects
+Each classes constructor must have at least 2 parameters that it is using to initialize class fields/attributes
+Each class must incorporate the use of encapsulation to access its fields/attributes
+Each class must have at least 2 methods (not counting getters/setters)
+
+Create a main (driver) class to construct your room
+
+TIME TO COMPLETE: 7PM EST

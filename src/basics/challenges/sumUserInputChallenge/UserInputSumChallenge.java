@@ -1,4 +1,4 @@
-package basics.challenges;
+package basics.challenges.sumUserInputChallenge;
 
 import java.util.Scanner;
 

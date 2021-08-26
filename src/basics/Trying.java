@@ -26,17 +26,15 @@ public class Trying {
             responseStatusCode = getStatusCode(requestURL);
 
             if (responseStatusCode == 200) {
-
                 if (!getJsonResponseErrorCode().contains("errorCode\" : \"UWC -")) {
                     try {
                         responseDataMap = new HashMap<>();
                         responseDataMap = getJsonResponseResponseData();
                     } catch (Exception e) {
                         System.out.println("Could not retrieve responseData");
-                        return responseDataMap;
                     }
-
                     return responseDataMap;
+
                 } else if ((getJsonResponseErrorCode().contains("errorCode\" : \"UWC -")) && retryCount < 5) {
                     retryCount++;
                     return getVaultMetaData(vaultID);
